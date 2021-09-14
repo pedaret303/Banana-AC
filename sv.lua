@@ -27,7 +27,6 @@ AddEventHandler(
 		end
 	end
 )
-TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
 RegisterServerEvent("AC:kick")
 AddEventHandler(
 	"AC:kick",
