@@ -76,16 +76,6 @@ Citizen.CreateThread(function()
         end
     end
 end)
-Citizen.CreateThread(function()
-    while true do
-		Citizen.Wait(2000)
-		local resources = {}
-		for i = 1, GetNumResources() do
-			resources[i] = GetResourceByFindIndex(i)
-		end
-		TriggerServerEvent('RadinPirouz:clientResources',resources)
-	end
-end)
 
 Citizen.CreateThread(function()
     while true do
